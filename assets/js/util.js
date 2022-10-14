@@ -587,7 +587,7 @@
 	let dNow = new Date().getTime()
 	let dIdade = new Date("2000-04-08").getTime()
 	const diffTime = Math.abs(dNow - dIdade) / (1000 * 60 * 60 * 24);
-	const years = Math.abs(Math.round(diffTime/365.25));;
+	const years = Math.abs(Math.floor(diffTime/365.25));
 
 	$('#idade').html(years);
 
